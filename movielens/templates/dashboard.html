@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>MovieLens 数据大屏</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.2/css/bootstrap.min.css">
+    <style>
+        .chart-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px 0 rgba(40,80,140,0.07);
+            padding: 18px 18px 8px 18px;
+            margin-bottom: 24px;
+            height: 440px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .chart-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .chart-canvas {
+            flex: 1;
+            min-height: 300px;
+        }
+        body { background: #f6f8fa; }
+    </style>
+</head>
+<body>
+<div class="container-fluid py-4">
+    <h1 class="text-center mb-4" style="font-weight: 900; font-size: 2.2rem;">MovieLens 数据可视化大屏</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="chart-box">
+                <div class="chart-title">评分最高电影TOP10</div>
+                <div class="chart-canvas" id="chart1"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="chart-box">
+                <div class="chart-title">评分最多电影TOP10</div>
+                <div class="chart-canvas" id="chart2"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="chart-box">
+                <div class="chart-title">最活跃用户TOP10</div>
+                <div class="chart-canvas" id="chart3"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="chart-box">
+                <div class="chart-title">一天中的观影高峰期</div>
+                <div class="chart-canvas" id="chart4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.staticfile.org/echarts/5.4.3/echarts.min.js"></script>
+<script>
+fetch('/data')
+  .then(res => res.json())
+  .then(d => {
+    // 图1：评分最高电影
+    var chart1 = echarts.init(document.getElementById('chart1'));
+    chart1.setOption({
+      tooltip: {trigger: 'axis'},
+      xAxis: {type: 'value', min:0, max:5, name: '平均评分'},
+      yAxis: {type: 'category', data: d.highscore.titles, inverse:true},
+      series: [{type:'bar', data: d.highscore.avg_ratings, label: {show:true, position:'right'}}],
+      grid: {left: 80, right: 20, top: 20, bottom: 20}
+    });
+
+    // 图2：评分最多电影
+    var chart2 = echarts.init(document.getElementById('chart2'));
+    chart2.setOption({
+      tooltip: {trigger: 'axis'},
+      xAxis: {type: 'value', name: '评分数'},
+      yAxis: {type: 'category', data: d.mostrated.titles, inverse:true},
+      series: [{type:'bar', data: d.mostrated.rating_counts}],
+      grid: {left: 80, right: 20, top: 20, bottom: 20}
+    });
+
+    // 图3：最活跃用户
+    var chart3 = echarts.init(document.getElementById('chart3'));
+    chart3.setOption({
+      tooltip: {trigger: 'axis'},
+      xAxis: {type: 'category', data: d.activeusers.userIds, name: '用户ID'},
+      yAxis: {type: 'value', name: '评分数'},
+      series: [{type:'bar', data: d.activeusers.counts}],
+      grid: {left: 60, right: 20, top: 20, bottom: 40}
+    });
+
+    // 图4：观影高峰期
+    var chart4 = echarts.init(document.getElementById('chart4'));
+    chart4.setOption({
+      tooltip: {trigger: 'axis'},
+      xAxis: {type: 'category', data: d.viewpeak.hours.map(String), name:'小时'},
+      yAxis: {type: 'value', name: '评分次数'},
+      series: [{type:'line', data: d.viewpeak.counts, smooth:true, symbol:'circle', symbolSize:8, lineStyle:{width:4}}],
+      grid: {left: 60, right: 20, top: 30, bottom: 40}
+    });
+  });
+</script>
+</body>
+</html>

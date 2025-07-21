@@ -1,0 +1,146 @@
+{
+  "highscore": {
+    "titles": [
+      "Shawshank Redemption, The (1994)",
+      "Godfather, The (1972)",
+      "Usual Suspects, The (1995)",
+      "Schindler's List (1993)",
+      "Godfather: Part II, The (1974)",
+      "Seven Samurai (Shichinin no samurai) (1954)",
+      "Rear Window (1954)",
+      "Band of Brothers (2001)",
+      "Casablanca (1942)",
+      "Sunset Blvd. (a.k.a. Sunset Boulevard) (1950)"
+    ],
+    "avg_ratings": [
+      4.45,
+      4.36,
+      4.33,
+      4.31,
+      4.28,
+      4.27,
+      4.27,
+      4.26,
+      4.26,
+      4.26
+    ],
+    "counts": [
+      63366,
+      41355,
+      47006,
+      50054,
+      27398,
+      11611,
+      17449,
+      4305,
+      24349,
+      6525
+    ]
+  },
+  "mostrated": {
+    "titles": [
+      "Pulp Fiction (1994)",
+      "Forrest Gump (1994)",
+      "Shawshank Redemption, The (1994)",
+      "Silence of the Lambs, The (1991)",
+      "Jurassic Park (1993)",
+      "Star Wars: Episode IV - A New Hope (1977)",
+      "Braveheart (1995)",
+      "Terminator 2: Judgment Day (1991)",
+      "Matrix, The (1999)",
+      "Schindler's List (1993)"
+    ],
+    "rating_counts": [
+      67310,
+      66172,
+      63366,
+      63299,
+      59715,
+      54502,
+      53769,
+      52244,
+      51334,
+      50054
+    ]
+  },
+  "activeusers": {
+    "userIds": [
+      "118205",
+      "8405",
+      "82418",
+      "121535",
+      "125794",
+      "74142",
+      "34576",
+      "131904",
+      "83090",
+      "59477"
+    ],
+    "counts": [
+      9254,
+      7515,
+      5646,
+      5520,
+      5491,
+      5447,
+      5356,
+      5330,
+      5169,
+      4988
+    ]
+  },
+  "viewpeak": {
+    "hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "counts": [
+      946689,
+      891222,
+      893318,
+      880206,
+      761767,
+      693646,
+      640515,
+      582846,
+      552690,
+      519421,
+      524195,
+      546619,
+      613826,
+      691889,
+      786165,
+      879910,
+      958747,
+      1007302,
+      1087910,
+      1144854,
+      1157567,
+      1163521,
+      1083166,
+      992272
+    ]
+  }
+}
