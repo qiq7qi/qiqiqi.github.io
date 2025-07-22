@@ -1,0 +1,246 @@
+[
+  {
+    "uuid": "c4d104aab41c48a99f2b4fd832c40334",
+    "title": "数理基础-1"
+  },
+  {
+    "uuid": "a111d279edf349e6b053376f42fd19a9",
+    "title": "数理基础-2"
+  },
+  {
+    "uuid": "0d4d26567f69499f9ed3cea5c79a8973",
+    "title": "数理基础-3"
+  },
+  {
+    "uuid": "17bd80a23901475d8121f700d49b21be",
+    "title": "数理基础-4"
+  },
+  {
+    "uuid": "65e11adc36694ac3859e31bbf9a92c6b",
+    "title": "数理基础-5"
+  },
+  {
+    "uuid": "46bdd699620d49f69b80d2e300b9d291",
+    "title": "数理基础-6"
+  },
+  {
+    "uuid": "b7256166c66644c4a5c39742427206f3",
+    "title": "数理基础-7"
+  },
+  {
+    "uuid": "4f182798d7f541e191a9665350a1c040",
+    "title": "数理基础-8"
+  },
+  {
+    "uuid": "a54ad2625e374a8d90f77d5225a1d773",
+    "title": "数理基础-9"
+  },
+  {
+    "uuid": "a218b03686ba4ce290e9ac8406b8e2c8",
+    "title": "数理基础-10"
+  },
+  {
+    "uuid": "436e5ef4fc534a62a52fb641309bba85",
+    "title": "数理基础-11"
+  },
+  {
+    "uuid": "c09430c0fb0440aead06455f164dc00f",
+    "title": "SQL-1"
+  },
+  {
+    "uuid": "7446976a89124a75bad96835052fe6e8",
+    "title": "SQL-2"
+  },
+  {
+    "uuid": "1cb9062dc4eb4b349ecf054915b5150c",
+    "title": "SQL-3"
+  },
+  {
+    "uuid": "026c531cf17747f9b32137c463017eaa",
+    "title": "SQL-4"
+  },
+  {
+    "uuid": "52cdb5360f324f27b4bdbf15b697a931",
+    "title": "SQL-5"
+  },
+  {
+    "uuid": "972ec8c961404278b3d364912f2e1bcf",
+    "title": "数据分析-1"
+  },
+  {
+    "uuid": "c66837d884b64374af67007d574cf309",
+    "title": "数据分析-2"
+  },
+  {
+    "uuid": "34928e2279d64e63984efbb21617197e",
+    "title": "数据分析-3"
+  },
+  {
+    "uuid": "78da35ae42dc4362bc087293ef51f477",
+    "title": "数据分析-4"
+  },
+  {
+    "uuid": "722325ce20694a389665ac8e3d698736",
+    "title": "数据分析-5"
+  },
+  {
+    "uuid": "e9b6acc83bf7490a91c21ce61550a591",
+    "title": "数据分析-6"
+  },
+  {
+    "uuid": "a1d3ebdfc462499b865dca86b57da35d",
+    "title": "数据分析-7"
+  },
+  {
+    "uuid": "96fcafc3ee21495ba7d2bfe3a8d6cd19",
+    "title": "业务指标-1"
+  },
+  {
+    "uuid": "e1a64bbcebb44726a1940c14af0fbc1d",
+    "title": "ABtest-3"
+  },
+  {
+    "uuid": "8165dbfe277348a693d729291d232bf7",
+    "title": "业务与用户分析-1"
+  },
+  {
+    "uuid": "0b211b19bfb5482288813ad1020b49f8",
+    "title": "业务与用户分析-2"
+  },
+  {
+    "uuid": "872d0e951fb34bf9a367726b6219cba8",
+    "title": "业务与用户分析-3"
+  },
+  {
+    "uuid": "fe623334d53349f3bc51ce1c6df2ebdd",
+    "title": "业务与用户分析-4"
+  },
+  {
+    "uuid": "5948743c973145aab37ce63845c681a4",
+    "title": "业务与用户分析-5"
+  },
+  {
+    "uuid": "e27c9edd75ec43bbb50e991f68e30f92",
+    "title": "机器学习与数据挖掘-1"
+  },
+  {
+    "uuid": "30f28e6bbecc4e19843abf6062975d98",
+    "title": "机器学习与数据挖掘-2"
+  },
+  {
+    "uuid": "cc4e5f08c6fe4aebb0700986bc0bc876",
+    "title": "机器学习与数据挖掘-3"
+  },
+  {
+    "uuid": "6fb303056a3e4eee96ba4edaca467ecc",
+    "title": "数据分析-8"
+  },
+  {
+    "uuid": "bb478da6e291441590d76ab6c7993e46",
+    "title": "机器学习与数据挖掘-4"
+  },
+  {
+    "uuid": "4b4abe6c071a405cabb5d86d7a625708",
+    "title": "机器学习与数据挖掘-5"
+  },
+  {
+    "uuid": "f72da622595642eebdcd5d3304d90f79",
+    "title": "机器学习与数据挖掘-6"
+  },
+  {
+    "uuid": "7818a43907794c39a6664a4003dc3738",
+    "title": "机器学习与数据挖掘-7"
+  },
+  {
+    "uuid": "09685b30644045d69b729b57b71e76a9",
+    "title": "python-1"
+  },
+  {
+    "uuid": "a7a7188ad4e946a6b06ac6c5a7768a8e",
+    "title": "业务指标-2"
+  },
+  {
+    "uuid": "a9f016df1ad44655a0b07a0e52057d75",
+    "title": "业务指标-3"
+  },
+  {
+    "uuid": "ded36488e58a488990d277587d6b5bc1",
+    "title": "ABtest-1"
+  },
+  {
+    "uuid": "1ab483b76214460a961b963ab7fa35d8",
+    "title": "ABtest-2"
+  },
+  {
+    "uuid": "34d8d01a81944ce6897f75eeeb9083cc",
+    "title": "业务指标-4"
+  },
+  {
+    "uuid": "664c05dce6154456bd0ba854802523ad",
+    "title": "业务指标-5"
+  },
+  {
+    "uuid": "158db092c43b4a649748d561787339b8",
+    "title": "业务指标-6"
+  },
+  {
+    "uuid": "d2a8a20e686f4d35a6749906368dbceb",
+    "title": "业务指标-7"
+  },
+  {
+    "uuid": "dc9b928e1af1437ea9524d993d80bb28",
+    "title": "费米估算-1"
+  },
+  {
+    "uuid": "b3a2420041d64bc8941fa16b1b6396ba",
+    "title": "费米估算-2"
+  },
+  {
+    "uuid": "19ed7950da804ec08a3a1fc4abb6607c",
+    "title": "数据分析工具"
+  },
+  {
+    "uuid": "131f5968f4b7462586dbdd8e0632fd5c",
+    "title": "自我介绍"
+  },
+  {
+    "uuid": "2ce9c2cea45b4bfaa2fa42a6943af25d",
+    "title": "python-2"
+  },
+  {
+    "uuid": "3ef2ad953f8b496c9e814f942949413d",
+    "title": "python-3"
+  },
+  {
+    "uuid": "8d21364ff9924442b8ea75252d793168",
+    "title": "行业分析"
+  },
+  {
+    "uuid": "2beeab45f2e04066b0e358c953c1b5c1",
+    "title": "职业规划-1"
+  },
+  {
+    "uuid": "6fb423a1cf2d494a958b702d60c70bd2",
+    "title": "职业规划-2"
+  },
+  {
+    "uuid": "5e7989413bff4f8aba01768e99801843",
+    "title": "职业规划-3"
+  },
+  {
+    "uuid": "cdb9770717a24c5f8155675792bece91",
+    "title": "业务与用户分析-6"
+  },
+  {
+    "uuid": "97aa5c07d6864cf3b28edf3b985079ed",
+    "title": "业务与用户分析-7"
+  },
+  {
+    "uuid": "090fc97e2c1943b583428750c9b715e6",
+    "title": "业务与用户分析-8"
+  },
+  {
+    "uuid": "81055e2c833042ba95abfe282b98261b",
+    "title": "业务与用户分析-9"
+  }
+]

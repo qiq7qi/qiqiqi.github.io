@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>数据分析 / 算法题库</title>
+  <!-- Bootswatch “Flatly” 主题，干净简洁 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/flatly/bootstrap.min.css">
+  <style>
+      body        { padding: 1.5rem; }
+      .q-card     { transition: box-shadow .2s; }
+      .q-card:hover{ box-shadow: 0 0 .75rem rgba(0,0,0,.15); }
+      /* 题号蓝条 */
+      .q-title-bar{ background:#2653d4;color:#fff;padding:.25rem .75rem;
+                    font-weight:700;border-radius:.25rem .25rem 0 0;}
+      /* 默认答案/解析模糊 */
+      .blur-it    { filter: blur(4px); transition: filter .2s;}
+      .blur-it:hover{ filter: none; }
+  </style>
+</head>
+<body>
+
+<h3 class="mb-4 fw-bold">数据分析 / 算法题库</h3>
+
+{% for block in blocks %}
+  <h4 class="mt-5 mb-3 text-primary">{{ block.main_title }}</h4>
+
+  {% for q in block.questions %}
+    <div class="card mb-4 q-card shadow-sm">
+      <div class="q-title-bar">{{ loop.index }}. {{ media(q.question) }}</div>
+      <div class="card-body" style="line-height:1.65">
+        <p><strong>答案：</strong>
+           <span class="blur-it">{{ media(q.answer) }}</span></p>
+        <p><strong>解析：</strong>
+           <span class="blur-it">{{ media(q.explanation) }}</span></p>
+
+        <!-- tag、company_tag 按钮 -->
+        <div class="mt-3">
+          <span class="badge bg-info me-2">{{ block.main_title }}</span>
+          {% if q.company_tag %}
+            <span class="badge bg-success">{{ q.company_tag }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}
+
+</body>
+</html>

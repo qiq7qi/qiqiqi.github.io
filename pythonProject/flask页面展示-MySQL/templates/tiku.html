@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>数据分析/算法题库</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body { background: #f6f8fa; }
+        .block-title {
+            color: #3353a5;
+            font-weight: bold;
+            margin-bottom: 24px;
+            font-size: 1.4rem;
+            border-left: 5px solid #5075e4;
+            padding-left: 10px;
+        }
+        .timu-card {
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px 0 rgba(80,117,228,0.07);
+            transition: box-shadow .2s;
+            background: #fff;
+            overflow: hidden;
+        }
+        .timu-card:hover {
+            box-shadow: 0 6px 20px 0 rgba(80,117,228,0.13);
+            border-left: 5px solid #5075e4;
+        }
+        .card-header {
+            background: #5075e4;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 12px 12px 0 0;
+        }
+        .tag, .company-tag {
+            display: inline-block;
+            font-size: 0.90em;
+            padding: 2px 12px;
+            border-radius: 12px;
+            margin-right: 10px;
+            margin-top: 4px;
+            margin-bottom: 3px;
+        }
+        .tag {
+            background: #f3f7fe;
+            color: #5075e4;
+            border: 1px solid #5075e4;
+        }
+        .company-tag {
+            background: #d3f7e8;
+            color: #1a7f5a;
+            border: 1px solid #47cf95;
+        }
+        .answer-title { color: #2567c0; font-weight: bold; }
+        .explanation-title { color: #47914e; font-weight: bold; }
+
+        /* 答案/解析遮罩核心样式 */
+        .cover-box {
+            position: relative;
+            margin-bottom: 0.6rem;
+        }
+        .cover-content {
+            filter: blur(8px);
+            transition: filter 0.2s;
+            pointer-events: none;
+            user-select: none;
+        }
+        .timu-card:hover .cover-content {
+            filter: none;
+            pointer-events: auto;
+            user-select: auto;
+        }
+        .cover-mask {
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+            background: rgba(240,240,240,0.72);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #999;
+            transition: opacity 0.2s;
+        }
+        .timu-card:hover .cover-mask {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container my-4">
+    <h2 class="mb-5" style="font-weight:bold;">数据分析/算法题库</h2>
+    {% for block in all_blocks %}
+        <div class="block-title">{{ block.main_title }}</div>
+        {% for item in block.questions %}
+            <div class="card timu-card">
+                <div class="card-header">
+                    {{ loop.index }}. {{ item.question }}
+                </div>
+                <div class="card-body">
+                    <div class="cover-box">
+                        <div class="cover-content">
+                            <span class="answer-title">答案：</span>{{ item.answer }}
+                        </div>
+                        <div class="cover-mask">悬停查看答案</div>
+                    </div>
+                    <div class="cover-box">
+                        <div class="cover-content">
+                            <span class="explanation-title">解析：</span>{{ item.explanation }}
+                        </div>
+                        <div class="cover-mask">悬停查看解析</div>
+                    </div>
+                    <div>
+                        <span class="tag">{{ block.main_title }}</span>
+                        {% if item.company_tag %}
+                            <span class="company-tag">{{ item.company_tag }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+</body>
+</html>
